@@ -101,6 +101,10 @@ export default async function Home() {
   // sort them in priority order
   personas.sort(personaComparator);
 
+  let danswer = personas.find(e => e.name == "Danswer");
+  if (danswer)
+    danswer.name = 'Expertx'
+  
   let tags: Tag[] = [];
   if (tagsResponse?.ok) {
     tags = (await tagsResponse.json()).tags;

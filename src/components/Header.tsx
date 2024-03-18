@@ -56,7 +56,7 @@ export const Header: React.FC<HeaderProps> = ({ user }) => {
   return (
     <header className="border-b border-border bg-background-emphasis">
       <div className="mx-8 flex h-16">
-        <Link className="py-4" href="/Chat">
+        <Link className="py-4" href="/chat">
           <div className="flex">
             <div className="h-[32px] w-[30px]">
               <Image src="/logo.svg" alt="Logo" width="1419" height="1520" />
