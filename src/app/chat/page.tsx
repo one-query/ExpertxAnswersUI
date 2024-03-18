@@ -120,7 +120,9 @@ export default async function Page({
   }
   // remove those marked as hidden by an admin
   personas = personas.filter((persona) => persona.is_visible);
-  personas[0].name = 'Expertx'
+  let danswer = personas.find(e => e.name == "Danswer");
+  if (danswer)
+    danswer.name = 'Expertx'
   // sort them in priority order
   personas.sort(personaComparator);
 

@@ -59,8 +59,10 @@ async function Page({ params }: { params: { id: string } }) {
       />
     );
   }
-  const personas = null//(await personasResponse.json()) as Persona[];
-  //personas[0].name = "Expertx"
+  const personas = (await personasResponse.json()) as Persona[];
+  let danswer = personas.find(e => e.name == "Danswer");
+  if (danswer)
+    danswer.name = 'Expertx'
   return (
     <div className="container mx-auto">
       <InstantSSRAutoRefresh />
