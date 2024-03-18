@@ -1,4 +1,4 @@
-import { StarterMessage } from "../admin/personas/interfaces";
+import type { StarterMessage } from "../admin/personas/interfaces";
 
 export function StarterMessage({
   starterMessage,
