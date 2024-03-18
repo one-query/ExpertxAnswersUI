@@ -7,7 +7,7 @@ export function StarterMessage({
   starterMessage: StarterMessage;
   onClick: () => void;
 }) {
-  return (
+  return ( 
     <div
       className={
         "py-2 px-3 rounded border border-border bg-white cursor-pointer hover:bg-hover-light h-full"
